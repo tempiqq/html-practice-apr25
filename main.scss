@@ -50,6 +50,7 @@ body {
     border-radius: 50%;
     position: relative;
     transition-duration: 1s;
+    z-index: 2;
   }
 
   &__photo-img:hover {
@@ -68,7 +69,7 @@ body {
   }
 
   &__name {
-    z-index: 1;
+    z-index: 3;
   }
 
   &__details {
@@ -82,14 +83,13 @@ body {
     left: -30px;
     border-radius: 12px;
     background-color: #eee;
-    z-index: 2;
+    z-index: -1;
     position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 
-    // коли я заспокоїв цей фон, то вже намудрив з з-індексами в інших класах, 
-    // так шо зам уже заплутався в цьому
+    
 
   }
 
