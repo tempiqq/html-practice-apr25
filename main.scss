@@ -18,6 +18,9 @@ body {
   justify-content: center;
   gap: 40px 30px;
 
+  @media (min-width: 1000px) {
+    grid-template-columns: repeat(4, 200px);
+  }
 
   &__person {
 
@@ -31,7 +34,6 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    object-fit: cover
   }
 
   &__rank {
