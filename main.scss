@@ -41,7 +41,6 @@ body {
 
   &__photo-card {
     position: relative;
-    z-index: 3;
   }
 
   &__photo-img {
@@ -57,7 +56,6 @@ body {
     width: 240px;
     height: 240px;
     border-radius: 25%;
-    z-index: 1;
     transform: translate(-20px, -20px);
   }
 
@@ -67,6 +65,13 @@ body {
 
   &__details {
 
+  }
+
+  &__name {
+    z-index: 1;
+  }
+
+  &__details {
   }
 
   &__extra {
@@ -83,6 +88,9 @@ body {
     flex-direction: column;
     justify-content: flex-end;
 
+    // коли я заспокоїв цей фон, то вже намудрив з з-індексами в інших класах, 
+    // так шо зам уже заплутався в цьому
+
   }
 
   &__sport {
@@ -93,3 +101,4 @@ body {
     visibility: hidden;
   }
 }
+
